@@ -1,5 +1,4 @@
 import NotExist from '../components/Nav/NotExist'
-import ReactDOM from 'react-dom'
 import sendCommand from './sendCommand'
 import { createRoot } from 'react-dom/client'
 

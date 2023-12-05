@@ -1,10 +1,8 @@
 "use client"
 
 import commandInputSend from "../utils/commandInputSend"
-import Help from "../components/Nav/Help"
 import executeHelp from "../utils/executeHelp"
 import { useEffect } from "react"
-import clearTerm from "../utils/clearterm"
 
 let prout = 1
 
@@ -40,7 +38,7 @@ const Home = () => {
           <span className="text-orange-500">  +#+     +#+    +#+     +#+           +#+    +#+ +#+     +#+ +#+  +#+#+#          +#+    +#+ +#+        +#+  +#+#+# +#+     +#+ +#+    +#+ +#+    +#+    </span>{'\n'}
           <span className="text-orange-600"> #+#     #+#    #+#     #+#    #+#    #+#    #+# #+#     #+# #+#   #+#+#          #+#    #+# #+#        #+#   #+#+# #+#     #+# #+#    #+# #+#    #+#     </span>{'\n'}
           <span className="text-red-600">###     ###    ### ########### ########     ### ###     ### ###    ####          ###    ### ########## ###    #### ###     ### ###    ### #########</span> {'\n\n\n\n'}
-          <span>type <span className="text-sky-500 hover:underline hover:text-blue-600 cursor-pointer" onClick={() => { executeHelp('', 'help') }}>'help'</span> to get help all commands references are clickable</span>
+          <span>type <span className="text-sky-500 hover:underline hover:text-blue-600 cursor-pointer" onClick={() => { executeHelp('', 'help') }}>&apos;help&apos;</span> to get help all commands references are clickable</span>
         </pre>
       </h1>
       <div className="termcontent" >

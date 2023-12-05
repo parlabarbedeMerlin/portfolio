@@ -1,4 +1,3 @@
-import executeHelp from "../utils/executeHelp";
 
 const Aboutme = () => {
     return (<>
@@ -6,7 +5,7 @@ const Aboutme = () => {
             <div className="pl-5">
                 <p className="text-sky-500 hover:underline hover:text-blue-600 font-bold">Me</p>
                 <p>
-                    Hey 👋, I'm Tristan, a web developper 🔗. I m' student 👨🏻‍🎓 at Sup de Vinci Paris 🗼, to become a web developper 👨🏻‍💻!
+                    Hey 👋, I&apos;m Tristan, a web developper 🔗. I m&apos; student 👨🏻‍🎓 at Sup de Vinci Paris 🗼, to become a web developper 👨🏻‍💻!
                 </p>
                 <p className="text-sky-500 hover:underline hover:text-blue-600 font-bold pt-5">Skills</p>
                 <ul className="pl-10 list-disc list-outside">
@@ -19,7 +18,7 @@ const Aboutme = () => {
                 </ul>
                 <p className="text-sky-500 hover:underline hover:text-blue-600 font-bold pt-5">What I learn ?</p>
                 <p>
-                    I'm learning Three.js using the cours of <a className="text-sky-500 hover:underline hover:text-blue-600" href="https://bruno-simon.com/">Bruno Simon</a> : Three js Journey !
+                    I&apos;m learning Three.js using the cours of <a className="text-sky-500 hover:underline hover:text-blue-600" href="https://bruno-simon.com/">Bruno Simon</a> : Three js Journey !
                 </p>
             </div>
         </>
