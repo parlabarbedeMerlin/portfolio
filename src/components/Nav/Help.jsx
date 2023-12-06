@@ -12,8 +12,7 @@ const Help = () => {
                 <p>    └ Show this manual to help you !</p>
                 <p> </p>
                 <p>  <button className="text-sky-500 hover:underline hover:text-blue-600" onClick={()=> {executeAboutme('', 'aboutme')}}>aboutme</button></p>
-                <p>    └ Give some information about me :</p>
-                <p>      About what I like, what I study and what I would like to do in the future ! </p>
+                <p>    └ Give some information about me : About what I like, what I study and what I would like to do in the future ! </p>
                 <p> </p>
                 <p>  <button className="text-sky-500 hover:underline hover:text-blue-600" onClick={()=> {executeProjects('', 'projects')}}>projects</button></p>
                 <p>    └ Shows my favorite personal projects (that I can show).</p>
