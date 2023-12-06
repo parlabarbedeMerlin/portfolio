@@ -7,18 +7,6 @@ import { useEffect } from "react"
 let prout = 1
 
 const Home = () => {
-  /*
-   * show preview of commands on tab pressed
-   *
-   * @param {Event} e - Document Event
-   */
-
-  const tabPreview = (e) => {
-    if (e.key === 'Tab') {
-      e.preventDefault()
-      document.getElementById('termcommandinput').placeholder = 'help    about me    projects    clear'
-    }
-  }
 
   useEffect(() => {
     if (prout) {
@@ -28,7 +16,7 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-start p-4 bg-gray-900" onKeyDown={(e) => tabPreview(e)}>
+    <main className="flex min-h-screen flex-col items-start p-4 bg-gray-900">
       <h1 className="text-white text-sm mb-6">
         <pre className="text-[9px] leading-[.4rem]">
           <span className="text-yellow-300">  ::::::::::: :::::::::  ::::::::::: :::::::: ::::::::::: :::     ::::    :::          :::::::::  :::::::::: ::::    :::     :::     :::::::::  :::::::::</span>{'\n'}
@@ -38,12 +26,12 @@ const Home = () => {
           <span className="text-orange-500">  +#+     +#+    +#+     +#+           +#+    +#+ +#+     +#+ +#+  +#+#+#          +#+    +#+ +#+        +#+  +#+#+# +#+     +#+ +#+    +#+ +#+    +#+    </span>{'\n'}
           <span className="text-orange-600"> #+#     #+#    #+#     #+#    #+#    #+#    #+# #+#     #+# #+#   #+#+#          #+#    #+# #+#        #+#   #+#+# #+#     #+# #+#    #+# #+#    #+#     </span>{'\n'}
           <span className="text-red-600">###     ###    ### ########### ########     ### ###     ### ###    ####          ###    ### ########## ###    #### ###     ### ###    ### #########</span> {'\n\n\n\n'}
-          <span>type <span className="text-sky-500 hover:underline hover:text-blue-600 cursor-pointer" onClick={() => { executeHelp('', 'help') }}>&apos;help&apos;</span> to get help all commands references are clickable</span>
+          <span>type <button className="text-sky-500 hover:underline hover:text-blue-600 cursor-pointer" onClick={() => { executeHelp('', 'help') }}>&apos;help&apos;</button> to get help all commands references are clickable</span>
         </pre>
       </h1>
-      <div className="termcontent" >
+      <div className="termcontent font-mono" >
       </div>
-      <div className="terminput w-full flex">
+      <div className="terminput w-full flex font-mono">
         <p className="font-bold">aBeautyfullHuman @ MyMind ~ %</p>
         <input
           id="termcommandinput"

@@ -15,21 +15,31 @@ const commandInputSend = (e) => {
 
         if (command[0] === "clear") {
             clearTerm(command, commandstr)
+            window.scrollTo(0, document.body.scrollHeight);
+            document.getElementById('termcommandinput').focus()
         } else if (command[0] === 'help') {
             executeHelp(command, commandstr)
+            window.scrollTo(0, document.body.scrollHeight);
+            document.getElementById('termcommandinput').focus()
         }else if (command[0] === 'aboutme') {
             executeAboutme(command, commandstr)
+            window.scrollTo(0, document.body.scrollHeight);
+            document.getElementById('termcommandinput').focus()
         }else if (command[0] === 'projects'){
             executeProjects(command, commandstr)
         } else if (command[0].length === 0) {
+            window.scrollTo(0, document.body.scrollHeight);
+            document.getElementById('termcommandinput').focus()
             sendCommand('')
+            window.scrollTo(0, document.body.scrollHeight);
+            document.getElementById('termcommandinput').focus()
         } else {
             notExist(command, commandstr)
             console.log(command.length)
+            window.scrollTo(0, document.body.scrollHeight);
+            document.getElementById('termcommandinput').focus()
         }
     }
-    window.scrollTo(0, document.body.scrollHeight);
-    document.getElementById('termcommandinput').focus()
 }
 
 export default commandInputSend
