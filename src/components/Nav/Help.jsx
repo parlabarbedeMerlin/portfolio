@@ -1,6 +1,7 @@
 import clearTerm from "../../utils/clearterm"
 import executeHelp from "../../utils/executeHelp"
 import executeAboutme from "../../utils/executeAboutme";
+import executeProjects from "../../utils/executeProjects";
 
 const Help = () => {
     return (
@@ -14,7 +15,7 @@ const Help = () => {
                 <p>    └ Give some information about me :</p>
                 <p>      About what I like, what I study and what I would like to do in the future ! </p>
                 <p> </p>
-                <p>  <button className="text-sky-500 hover:underline hover:text-blue-600">projects</button></p>
+                <p>  <button className="text-sky-500 hover:underline hover:text-blue-600" onClick={()=> {executeProjects('', 'projects')}}>projects</button></p>
                 <p>    └ Shows my favorite personal projects (that I can show).</p>
                 <p> </p>
                 <p>  <button className="text-sky-500 hover:underline hover:text-blue-600" onClick={() => { clearTerm() }}>clear</button></p>

@@ -3,6 +3,7 @@ import executeHelp from "./executeHelp"
 import notExist from "./notExist"
 import sendCommand from "./sendCommand"
 import executeAboutme from "./executeAboutme";
+import executeProjects from "./executeProjects";
 
 const commandInputSend = (e) => {
     console.log(e.code)
@@ -16,8 +17,10 @@ const commandInputSend = (e) => {
             clearTerm(command, commandstr)
         } else if (command[0] === 'help') {
             executeHelp(command, commandstr)
-        }else if (command[0] === 'aboutme'){
+        }else if (command[0] === 'aboutme') {
             executeAboutme(command, commandstr)
+        }else if (command[0] === 'projects'){
+            executeProjects(command, commandstr)
         } else if (command[0].length === 0) {
             sendCommand('')
         } else {
