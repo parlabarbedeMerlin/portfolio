@@ -16,7 +16,7 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-start p-4 bg-gray-900">
+    <main className="flex min-h-screen flex-col items-start p-4 bg-gray-900 overflow-hidden">
       <h1 className="text-white text-sm mb-6">
         <pre className="text-[60%] leading-[.4rem]">
           <span className="text-yellow-300 lg:flex">  ::::::::::: :::::::::  ::::::::::: :::::::: ::::::::::: :::     ::::    ::: <span className="hidden lg:block">         :::::::::  :::::::::: ::::    :::     :::     :::::::::  :::::::::</span></span>{'\n'}
@@ -31,7 +31,7 @@ const Home = () => {
       </h1>
       <div className="termcontent font-mono" >
       </div>
-      <div className="terminput w-full flex font-mono">
+      <div className="terminput w-full flex overflow-hidden font-mono">
         <p className="font-bold">aBeautyfullHuman <span className="hidden"> @ MyMind ~ </span>%</p>
         <input
           id="termcommandinput"
